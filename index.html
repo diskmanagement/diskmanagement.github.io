@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='url' content='https://diskmanagement.github.io'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='url' content='https://diskmanagement.github.io'>
     <meta name='keywords' content='disk management'>
     <meta name='description' content='Disk management allows you to organize drive, represent drive storage graphically and allocate space for disk partition.'>
     <meta name='robots' content='index,follow'>
@@ -12,92 +12,87 @@
     <meta property="og:description" content="Disk management allows you to organize drive, represent drive storage graphically and allocate space for disk partition." />
     <meta property="og:url" content="https://diskmanagement.github.io" />
     <meta property="og:site_name" content="Disk Management : What is it and how to use" />
-    <title>Disk Management : What is it and how to use?</title>
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            background-color: rgb(248, 247, 247);
-        }
-        h1{
-            text-align: center;
-            background-color: #000080;
-            padding: 10px;
-            color: white;
-        }
-        .container{
-            padding:1rem 2.5rem;
-            font-size: 1.3rem;
-        }
-        h2{
-            color: #191970;
-        }
-        li{
-            border: 1px solid #c4c4c7;
-            margin: 10px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .list{
-            padding: 0.5rem;
-        }
-        footer{
-            height: 40px;
-            background-color: #000080;
-        }
-    </style>
+ <title>Disk Management : What is it and how to use?</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Disk Management</h1>
-    <br>
-    <div class="container">
-        <p><a style="color:#000080;" href="https://diskmanagement.github.io/">Disk management</a> is a built-in Windows utility that allows you to manage and configure your computer's storage devices, such as hard drives and solid-state drives.</p>
-        <br>
-        <strong>To open Disk Management</strong>   
-        <br>
-
-        <div class="list"> 
-            <ol>
-                <li>First go to the desktop and right-click on <strong>"This PC"</strong> or <strong>"My Computer"</strong> icon.</li>
-                
-                <li>Then, select <strong>"Manage"</strong>.</li>
-                
-               
-                <li>Now go to <strong>"Storage"</strong> in the left sidebar and click <a style="color:#000080;" href="https://diskmanagement.github.io/">'disk management'</a>.</li>
-                
-            </ol>
-        </div>
-        <br>
-        <h2> What can you do with disk management?</h2>
-        <br>
-        <div class="list">
-            <ul>
-                <li>Drive partition</li>
-                
-                <li>Change in drive letter</li>
-                
-                <li>Drive formatting</li>
-                
-                <li>Initiate another new drive</li>
-                
-                <li>Drive partition Contraction</li>
-
-                <li>Drive partition Expansion</li>
-                
-                <li>Change in file system of a drive</li>
-                
-                <li>Drive partition deletion</li>
-                
-                <li>Troubleshoot various disk issues</li>
-
-            </ul>
-        </div>
-        
-        <!-- start -->
+  <div class="flex-container" id="menu">
+    <div class="flex1 align-self-center" style="padding: 0px;padding-top: 10px;padding-left:30px;font-size: 1.2rem;">
+      <p>Disk Management</p>
     </div>
-    <footer>
-    
-    </footer>
-    
+    <div class="topnav" id="myTopnav">
+      <li><a href="javascript:void(0);" onclick="myFunction()" class="fa fa-bars">
+
+        </a></li>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#news">Privacy-Policy</a></li>
+      <li><a href="#contact">Disclaimer</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-sm-1 p-3"></div>
+      <div class="col-sm-6 p-3" id="col1">
+        <div class="firstContent">
+          <h1>Disk Management</h1>
+          <p><a style="color:#000080;" href="https://diskmanagement.github.io/">Disk management</a> is a built-in Windows utility that allows you to manage and configure your computer's storage devices, such as hard drives and solid-state drives.</p>
+        </div>
+        <div class="list1">
+          <strong style="font-size: 25px;">To Open Disk Managment</strong>
+          <br>
+          <br>
+          <ol>
+
+            <li>First go to the desktop and right-click on <strong>"This PC"</strong> or <strong>"My Computer"</strong> icon.</li>
+            <li>Then, select <strong>"Manage"</strong>.</li>
+            <li>Now go to <strong>"Storage"</strong> in the left sidebar and click <a style="color:#000080; padding: 0px;" href="https://diskmanagement.github.io/">'disk management'</a>.</li>
+          </ol>
+        </div><br>
+        <div class="secondContent">
+          <h2>What can you do with disk management?</h2>
+         
+        </div><br>
+        <div class="list2">
+          <ul class="">
+            <li class="">Drive partition</li>
+            <li class="">Change in drive letter</li>
+            <li class="">Drive formatting</li>
+            <li class="">Initialize another new disk</li>
+            <li class="">Drive partition Contraction</li>
+            <li class="">Drive partition Expansion</li>
+            <li class="">Drive partition deletion</li>
+          </ul>
+        </div><br>
+        <br>
+
+      </div>
+      <div class="col-sm-4 p-3" id="col1"></div>
+      <div class="col-sm-1 p-3"></div>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid" id="footer">
+    <h5>© 2023 All Rights Reserved <a href="##">Control Panel</a></h5>
+
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
